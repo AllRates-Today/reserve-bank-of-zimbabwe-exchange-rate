@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'ZWG', { apiKey: 'art_live_...' });
 {
   bank: 'rbz',
   name: 'Reserve Bank of Zimbabwe',
-  rate_date: '2024-07-31',   // Reserve Bank of Zimbabwe's own publication date
+  rate_date: '2026-09-09',   // Reserve Bank of Zimbabwe's own publication date
   source: 'USD',
   target: 'ZWG',
-  rate: 13.7859,
+  rate: 26.6908,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -98,11 +98,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'rbz',
   name: 'Reserve Bank of Zimbabwe',
-  rate_date: '2024-07-31',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "ZWG", "type": "middle", "value": 13.7859 },
-    { "base": "USD", "quote": "ZWG", "type": "sell", "value": 14.1305 },
-    { "base": "USD", "quote": "ZWG", "type": "buy", "value": 13.4413 },
+    { "base": "USD", "quote": "ZWG", "type": "middle", "value": 26.6908 },
+    { "base": "USD", "quote": "ZWG", "type": "sell", "value": 27.3581 },
+    { "base": "USD", "quote": "ZWG", "type": "buy", "value": 26.0235 },
     // … the rest of the published table (34 currencies vs ZWG)
   ],
   disclaimer: '…'
@@ -142,7 +142,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'reserve-bank-of-zimbabwe-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'ZWG', from: '2024-01-01', to: '2024-07-31' },
+  { source: 'USD', target: 'ZWG', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -154,12 +154,12 @@ const series = await getHistory(
   bank: 'rbz',
   source: 'USD',
   target: 'ZWG',
-  from: '2024-01-01',
-  to: '2024-07-31',
+  from: '2026-01-01',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2024-07-31', rate: 13.7859, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 26.6908, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -237,6 +237,14 @@ getRate('USD', 'ZWG', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2024 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/rbz.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/rbz/latest.json`
 
 ## 🔗 Links
 
