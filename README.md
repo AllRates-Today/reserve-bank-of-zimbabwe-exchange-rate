@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'ZWG', { apiKey: 'art_live_...' });
 {
   bank: 'rbz',
   name: 'Reserve Bank of Zimbabwe',
-  rate_date: '2026-09-25',   // Reserve Bank of Zimbabwe's own publication date
+  rate_date: '2026-10-06',   // Reserve Bank of Zimbabwe's own publication date
   source: 'USD',
   target: 'ZWG',
-  rate: 26.6294,
+  rate: 26.7583,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -113,11 +113,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'rbz',
   name: 'Reserve Bank of Zimbabwe',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "ZWG", "type": "middle", "value": 26.6294 },
-    { "base": "USD", "quote": "ZWG", "type": "sell", "value": 27.2951 },
-    { "base": "USD", "quote": "ZWG", "type": "buy", "value": 25.9637 },
+    { "base": "USD", "quote": "ZWG", "type": "middle", "value": 26.7583 },
+    { "base": "USD", "quote": "ZWG", "type": "sell", "value": 27.4273 },
+    { "base": "USD", "quote": "ZWG", "type": "buy", "value": 26.0893 },
     // … the rest of the published table (34 currencies vs ZWG)
   ],
   disclaimer: '…'
@@ -157,7 +157,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'reserve-bank-of-zimbabwe-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'ZWG', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'ZWG', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -170,11 +170,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'ZWG',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 26.6294, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 26.7583, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
