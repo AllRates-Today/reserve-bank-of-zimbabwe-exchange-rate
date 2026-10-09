@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/reserve-bank-of-zimbabwe-exchange-rate.svg)](https://github.com/AllRates-Today/reserve-bank-of-zimbabwe-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/reserve-bank-of-zimbabwe-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/ZWG today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Frbz%3Fsource%3DUSD%26target%3DZWG&query=%24.rate&label=USD%2FZWG%20published%20by%20Reserve%20Bank%20of%20Zimbabwe&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/rbz/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Frbz%3Fsource%3DUSD%26target%3DZWG&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/rbz/)
 
 **Official Reserve Bank of Zimbabwe (Zimbabwe) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Reserve Bank of Zimbabwe itself prints, every business day.**
 
@@ -32,6 +34,47 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Reserve Bank of Zimbabwe table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by Reserve Bank of Zimbabwe — 28 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | ZWG | buy | 18.1725 |
+| AUD | ZWG | middle | 18.6467 |
+| AUD | ZWG | sell | 19.1209 |
+| BWP | ZWG | buy | 1.8084 |
+| BWP | ZWG | middle | 1.8821 |
+| BWP | ZWG | sell | 1.9558 |
+| CHF | ZWG | buy | 31.3346 |
+| CHF | ZWG | middle | 32.154 |
+| CHF | ZWG | sell | 32.9733 |
+| EUR | ZWG | buy | 29.2494 |
+| EUR | ZWG | middle | 30.0035 |
+| EUR | ZWG | sell | 30.7576 |
+| GBP | ZWG | buy | 34.4716 |
+| GBP | ZWG | middle | 35.361 |
+| GBP | ZWG | sell | 36.2504 |
+| NZD | ZWG | buy | 14.6364 |
+| NZD | ZWG | middle | 15.0158 |
+| NZD | ZWG | sell | 15.3952 |
+| USD | ZWG | buy | 26.0203 |
+| USD | ZWG | middle | 26.6875 |
+| USD | ZWG | sell | 27.3547 |
+| XAU | ZWG | buy | 109274.5916 |
+| XAU | ZWG | middle | 112084.3542 |
+| XAU | ZWG | sell | 114894.1167 |
+| XDR | ZWG | buy | 36.0772 |
+| XDR | ZWG | middle | 36.0772 |
+| XDR | ZWG | sell | 36.0772 |
+| ZMW | ZWG | sell | 0.7647 |
+
+Source: [Official rates published by RBZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rbz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
