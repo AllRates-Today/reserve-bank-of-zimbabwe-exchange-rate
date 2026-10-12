@@ -40,40 +40,72 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Reserve Bank of Zimbabwe table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-09** by Reserve Bank of Zimbabwe — 28 rates. Updated 2026-10-09.
+Published **2026-10-12** by Reserve Bank of Zimbabwe — 102 rates, first 60 shown. Updated 2026-10-12.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ZWG | buy | 18.1725 |
-| AUD | ZWG | middle | 18.6467 |
-| AUD | ZWG | sell | 19.1209 |
-| BWP | ZWG | buy | 1.8084 |
-| BWP | ZWG | middle | 1.8821 |
-| BWP | ZWG | sell | 1.9558 |
-| CHF | ZWG | buy | 31.3346 |
-| CHF | ZWG | middle | 32.154 |
-| CHF | ZWG | sell | 32.9733 |
-| EUR | ZWG | buy | 29.2494 |
-| EUR | ZWG | middle | 30.0035 |
-| EUR | ZWG | sell | 30.7576 |
-| GBP | ZWG | buy | 34.4716 |
-| GBP | ZWG | middle | 35.361 |
-| GBP | ZWG | sell | 36.2504 |
-| NZD | ZWG | buy | 14.6364 |
-| NZD | ZWG | middle | 15.0158 |
-| NZD | ZWG | sell | 15.3952 |
-| USD | ZWG | buy | 26.0203 |
-| USD | ZWG | middle | 26.6875 |
-| USD | ZWG | sell | 27.3547 |
-| XAU | ZWG | buy | 109274.5916 |
-| XAU | ZWG | middle | 112084.3542 |
-| XAU | ZWG | sell | 114894.1167 |
-| XDR | ZWG | buy | 36.0772 |
-| XDR | ZWG | middle | 36.0772 |
-| XDR | ZWG | sell | 36.0772 |
-| ZMW | ZWG | sell | 0.7647 |
+| AFN | ZWG | buy | 2.3708 |
+| AFN | ZWG | middle | 2.4354 |
+| AFN | ZWG | sell | 2.5 |
+| ARS | ZWG | buy | 55.5181 |
+| ARS | ZWG | middle | 56.9512 |
+| ARS | ZWG | sell | 58.3843 |
+| AUD | ZWG | buy | 18.1231 |
+| AUD | ZWG | middle | 18.5905 |
+| AUD | ZWG | sell | 19.0579 |
+| BRL | ZWG | buy | 0.1827 |
+| BRL | ZWG | middle | 0.1874 |
+| BRL | ZWG | sell | 0.1921 |
+| BWP | ZWG | buy | 1.8188 |
+| BWP | ZWG | middle | 1.8996 |
+| BWP | ZWG | sell | 1.9803 |
+| CHF | ZWG | buy | 31.2633 |
+| CHF | ZWG | middle | 32.0728 |
+| CHF | ZWG | sell | 32.8823 |
+| CNY | ZWG | buy | 0.245 |
+| CNY | ZWG | middle | 0.2513 |
+| CNY | ZWG | sell | 0.2576 |
+| DKK | ZWG | buy | 0.2442 |
+| DKK | ZWG | middle | 0.2505 |
+| DKK | ZWG | sell | 0.2568 |
+| EGP | ZWG | buy | 1.923 |
+| EGP | ZWG | middle | 1.9743 |
+| EGP | ZWG | sell | 2.0255 |
+| ETB | ZWG | buy | 5.8937 |
+| ETB | ZWG | middle | 6.0641 |
+| ETB | ZWG | sell | 6.2344 |
+| EUR | ZWG | buy | 29.1035 |
+| EUR | ZWG | middle | 29.8525 |
+| EUR | ZWG | sell | 30.6014 |
+| GBP | ZWG | buy | 34.3859 |
+| GBP | ZWG | middle | 35.2771 |
+| GBP | ZWG | sell | 36.1683 |
+| HKD | ZWG | buy | 0.2837 |
+| HKD | ZWG | middle | 0.2929 |
+| HKD | ZWG | sell | 0.302 |
+| INR | ZWG | buy | 3.5058 |
+| INR | ZWG | middle | 3.5959 |
+| INR | ZWG | sell | 3.686 |
+| JPY | ZWG | buy | 5.7981 |
+| JPY | ZWG | middle | 5.947 |
+| JPY | ZWG | sell | 6.0959 |
+| KES | ZWG | buy | 4.75 |
+| KES | ZWG | middle | 4.8757 |
+| KES | ZWG | sell | 5.0013 |
+| LSL | ZWG | buy | 0.6042 |
+| LSL | ZWG | middle | 0.6198 |
+| LSL | ZWG | sell | 0.6353 |
+| MUR | ZWG | buy | 1.7345 |
+| MUR | ZWG | middle | 1.7848 |
+| MUR | ZWG | sell | 1.835 |
+| MWK | ZWG | buy | 62.8458 |
+| MWK | ZWG | middle | 65.118 |
+| MWK | ZWG | sell | 67.3902 |
+| MYR | ZWG | buy | 0.1494 |
+| MYR | ZWG | middle | 0.1533 |
+| MYR | ZWG | sell | 0.1572 |
 
-Source: [Official rates published by RBZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rbz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+[Full table on the Reserve Bank of Zimbabwe rates page](https://allratestoday.com/central-bank-rates-api/rbz/) · Source: [Official rates published by RBZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rbz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
 
 ## 🔑 Get your API key
