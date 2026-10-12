@@ -37,7 +37,9 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 
 ## 📈 Latest published table
 
-Today's full Reserve Bank of Zimbabwe table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+[![Latest Reserve Bank of Zimbabwe table](https://allratestoday.com/api/open/central-bank/rbz/table.svg)](https://allratestoday.com/central-bank-rates-api/rbz/)
+
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 Published **2026-10-12** by Reserve Bank of Zimbabwe — 102 rates, first 60 shown. Updated 2026-10-12.
@@ -160,10 +162,10 @@ const pair = await getRate('USD', 'ZWG', { apiKey: 'art_live_...' });
 {
   bank: 'rbz',
   name: 'Reserve Bank of Zimbabwe',
-  rate_date: '2026-10-08',   // Reserve Bank of Zimbabwe's own publication date
+  rate_date: '2026-10-12',   // Reserve Bank of Zimbabwe's own publication date
   source: 'USD',
   target: 'ZWG',
-  rate: 26.7149,
+  rate: 26.6492,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -188,11 +190,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'rbz',
   name: 'Reserve Bank of Zimbabwe',
-  rate_date: '2026-10-08',
+  rate_date: '2026-10-12',
   rates: [
-    { "base": "USD", "quote": "ZWG", "type": "middle", "value": 26.7149 },
-    { "base": "USD", "quote": "ZWG", "type": "sell", "value": 27.3828 },
-    { "base": "USD", "quote": "ZWG", "type": "buy", "value": 26.047 },
+    { "base": "USD", "quote": "ZWG", "type": "middle", "value": 26.6492 },
+    { "base": "USD", "quote": "ZWG", "type": "sell", "value": 27.3154 },
+    { "base": "USD", "quote": "ZWG", "type": "buy", "value": 25.983 },
     // … the rest of the published table (34 currencies vs ZWG)
   ],
   disclaimer: '…'
@@ -232,7 +234,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'reserve-bank-of-zimbabwe-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'ZWG', from: '2026-01-01', to: '2026-10-08' },
+  { source: 'USD', target: 'ZWG', from: '2026-01-01', to: '2026-10-12' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -245,11 +247,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'ZWG',
   from: '2026-01-01',
-  to: '2026-10-08',
+  to: '2026-10-12',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-08', rate: 26.7149, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-10-12', rate: 26.6492, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -300,6 +302,7 @@ curl "https://allratestoday.com/api/v1/central-bank/rbz/latest?format=xml&api_ke
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('rbz')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate rbz ...` command
+- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
