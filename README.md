@@ -42,72 +42,40 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-12** by Reserve Bank of Zimbabwe — 102 rates, first 60 shown. Updated 2026-10-12.
+Published **2026-10-13** by Reserve Bank of Zimbabwe — 28 rates. Updated 2026-10-13.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AFN | ZWG | buy | 2.3708 |
-| AFN | ZWG | middle | 2.4354 |
-| AFN | ZWG | sell | 2.5 |
-| ARS | ZWG | buy | 55.5181 |
-| ARS | ZWG | middle | 56.9512 |
-| ARS | ZWG | sell | 58.3843 |
-| AUD | ZWG | buy | 18.1231 |
-| AUD | ZWG | middle | 18.5905 |
-| AUD | ZWG | sell | 19.0579 |
-| BRL | ZWG | buy | 0.1827 |
-| BRL | ZWG | middle | 0.1874 |
-| BRL | ZWG | sell | 0.1921 |
-| BWP | ZWG | buy | 1.8188 |
-| BWP | ZWG | middle | 1.8996 |
-| BWP | ZWG | sell | 1.9803 |
-| CHF | ZWG | buy | 31.2633 |
-| CHF | ZWG | middle | 32.0728 |
-| CHF | ZWG | sell | 32.8823 |
-| CNY | ZWG | buy | 0.245 |
-| CNY | ZWG | middle | 0.2513 |
-| CNY | ZWG | sell | 0.2576 |
-| DKK | ZWG | buy | 0.2442 |
-| DKK | ZWG | middle | 0.2505 |
-| DKK | ZWG | sell | 0.2568 |
-| EGP | ZWG | buy | 1.923 |
-| EGP | ZWG | middle | 1.9743 |
-| EGP | ZWG | sell | 2.0255 |
-| ETB | ZWG | buy | 5.8937 |
-| ETB | ZWG | middle | 6.0641 |
-| ETB | ZWG | sell | 6.2344 |
-| EUR | ZWG | buy | 29.1035 |
-| EUR | ZWG | middle | 29.8525 |
-| EUR | ZWG | sell | 30.6014 |
-| GBP | ZWG | buy | 34.3859 |
-| GBP | ZWG | middle | 35.2771 |
-| GBP | ZWG | sell | 36.1683 |
-| HKD | ZWG | buy | 0.2837 |
-| HKD | ZWG | middle | 0.2929 |
-| HKD | ZWG | sell | 0.302 |
-| INR | ZWG | buy | 3.5058 |
-| INR | ZWG | middle | 3.5959 |
-| INR | ZWG | sell | 3.686 |
-| JPY | ZWG | buy | 5.7981 |
-| JPY | ZWG | middle | 5.947 |
-| JPY | ZWG | sell | 6.0959 |
-| KES | ZWG | buy | 4.75 |
-| KES | ZWG | middle | 4.8757 |
-| KES | ZWG | sell | 5.0013 |
-| LSL | ZWG | buy | 0.6042 |
-| LSL | ZWG | middle | 0.6198 |
-| LSL | ZWG | sell | 0.6353 |
-| MUR | ZWG | buy | 1.7345 |
-| MUR | ZWG | middle | 1.7848 |
-| MUR | ZWG | sell | 1.835 |
-| MWK | ZWG | buy | 62.8458 |
-| MWK | ZWG | middle | 65.118 |
-| MWK | ZWG | sell | 67.3902 |
-| MYR | ZWG | buy | 0.1494 |
-| MYR | ZWG | middle | 0.1533 |
-| MYR | ZWG | sell | 0.1572 |
+| AUD | ZWG | buy | 18.0668 |
+| AUD | ZWG | middle | 18.5328 |
+| AUD | ZWG | sell | 18.9988 |
+| BWP | ZWG | buy | 1.817 |
+| BWP | ZWG | middle | 1.8909 |
+| BWP | ZWG | sell | 1.9648 |
+| CHF | ZWG | buy | 31.1434 |
+| CHF | ZWG | middle | 31.9479 |
+| CHF | ZWG | sell | 32.7524 |
+| EUR | ZWG | buy | 29.0029 |
+| EUR | ZWG | middle | 29.748 |
+| EUR | ZWG | sell | 30.493 |
+| GBP | ZWG | buy | 34.3036 |
+| GBP | ZWG | middle | 35.1928 |
+| GBP | ZWG | sell | 36.0819 |
+| NZD | ZWG | buy | 14.5131 |
+| NZD | ZWG | middle | 14.8894 |
+| NZD | ZWG | sell | 15.2656 |
+| USD | ZWG | buy | 25.9581 |
+| USD | ZWG | middle | 26.6237 |
+| USD | ZWG | sell | 27.2893 |
+| XAU | ZWG | buy | 108916.813 |
+| XAU | ZWG | middle | 111716.5429 |
+| XAU | ZWG | sell | 114516.2727 |
+| XDR | ZWG | buy | 36.0287 |
+| XDR | ZWG | middle | 36.0287 |
+| XDR | ZWG | sell | 36.0287 |
+| ZMW | ZWG | sell | 0.7669 |
 
-[Full table on the Reserve Bank of Zimbabwe rates page](https://allratestoday.com/central-bank-rates-api/rbz/) · Source: [Official rates published by RBZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rbz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+Source: [Official rates published by RBZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rbz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
 
 ## 🔑 Get your API key
