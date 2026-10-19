@@ -33,49 +33,84 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/rbz').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest Reserve Bank of Zimbabwe table](https://allratestoday.com/api/open/central-bank/rbz/table.svg)](https://allratestoday.com/central-bank-rates-api/rbz/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by Reserve Bank of Zimbabwe — 28 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by Reserve Bank of Zimbabwe — 102 rates, first 60 shown. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ZWG | buy | 18.0141 |
-| AUD | ZWG | middle | 18.4774 |
-| AUD | ZWG | sell | 18.9406 |
-| BWP | ZWG | buy | 1.8159 |
-| BWP | ZWG | middle | 1.8829 |
-| BWP | ZWG | sell | 1.9499 |
-| CHF | ZWG | buy | 31.3574 |
-| CHF | ZWG | middle | 32.1674 |
-| CHF | ZWG | sell | 32.9774 |
-| EUR | ZWG | buy | 29.1199 |
-| EUR | ZWG | middle | 29.8679 |
-| EUR | ZWG | sell | 30.6159 |
-| GBP | ZWG | buy | 34.4951 |
-| GBP | ZWG | middle | 35.385 |
-| GBP | ZWG | sell | 36.2749 |
-| NZD | ZWG | buy | 14.6624 |
-| NZD | ZWG | middle | 15.0397 |
-| NZD | ZWG | sell | 15.417 |
-| USD | ZWG | buy | 25.942 |
-| USD | ZWG | middle | 26.6072 |
-| USD | ZWG | sell | 27.2724 |
-| XAU | ZWG | buy | 108309.2306 |
-| XAU | ZWG | middle | 111093.7539 |
-| XAU | ZWG | sell | 113878.2772 |
-| XDR | ZWG | buy | 36.0261 |
-| XDR | ZWG | middle | 36.0261 |
-| XDR | ZWG | sell | 36.0261 |
-| ZMW | ZWG | sell | 0.7706 |
+| AFN | ZWG | buy | 2.3754 |
+| AFN | ZWG | middle | 2.4402 |
+| AFN | ZWG | sell | 2.5049 |
+| ARS | ZWG | buy | 55.6033 |
+| ARS | ZWG | middle | 57.0386 |
+| ARS | ZWG | sell | 58.4739 |
+| AUD | ZWG | buy | 18.0995 |
+| AUD | ZWG | middle | 18.569 |
+| AUD | ZWG | sell | 19.0385 |
+| BRL | ZWG | buy | 0.1855 |
+| BRL | ZWG | middle | 0.1903 |
+| BRL | ZWG | sell | 0.1951 |
+| BWP | ZWG | buy | 1.8172 |
+| BWP | ZWG | middle | 1.8843 |
+| BWP | ZWG | sell | 1.9513 |
+| CHF | ZWG | buy | 31.4822 |
+| CHF | ZWG | middle | 32.2954 |
+| CHF | ZWG | sell | 33.1086 |
+| CNY | ZWG | buy | 0.2448 |
+| CNY | ZWG | middle | 0.2511 |
+| CNY | ZWG | sell | 0.2574 |
+| DKK | ZWG | buy | 0.2438 |
+| DKK | ZWG | middle | 0.2501 |
+| DKK | ZWG | sell | 0.2564 |
+| EGP | ZWG | buy | 1.9555 |
+| EGP | ZWG | middle | 2.0076 |
+| EGP | ZWG | sell | 2.0596 |
+| ETB | ZWG | buy | 5.894 |
+| ETB | ZWG | middle | 6.0644 |
+| ETB | ZWG | sell | 6.2348 |
+| EUR | ZWG | buy | 29.1508 |
+| EUR | ZWG | middle | 29.8996 |
+| EUR | ZWG | sell | 30.6483 |
+| GBP | ZWG | buy | 34.6102 |
+| GBP | ZWG | middle | 35.499 |
+| GBP | ZWG | sell | 36.3877 |
+| HKD | ZWG | buy | 0.2839 |
+| HKD | ZWG | middle | 0.2931 |
+| HKD | ZWG | sell | 0.3022 |
+| INR | ZWG | buy | 3.4742 |
+| INR | ZWG | middle | 3.5635 |
+| INR | ZWG | sell | 3.6527 |
+| JPY | ZWG | buy | 5.7941 |
+| JPY | ZWG | middle | 5.943 |
+| JPY | ZWG | sell | 6.0919 |
+| KES | ZWG | buy | 4.7597 |
+| KES | ZWG | middle | 4.8856 |
+| KES | ZWG | sell | 5.0114 |
+| LSL | ZWG | buy | 0.6028 |
+| LSL | ZWG | middle | 0.6183 |
+| LSL | ZWG | sell | 0.6338 |
+| MUR | ZWG | buy | 1.7258 |
+| MUR | ZWG | middle | 1.7758 |
+| MUR | ZWG | sell | 1.8258 |
+| MWK | ZWG | buy | 62.914 |
+| MWK | ZWG | middle | 65.1685 |
+| MWK | ZWG | sell | 67.4229 |
+| MYR | ZWG | buy | 0.1494 |
+| MYR | ZWG | middle | 0.1534 |
+| MYR | ZWG | sell | 0.1573 |
 
-Source: [Official rates published by RBZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rbz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+</details>
+
+[Full table on the Reserve Bank of Zimbabwe rates page](https://allratestoday.com/central-bank-rates-api/rbz/) · Source: [Official rates published by RBZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rbz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
 
 ## 🔑 Get your API key
@@ -349,7 +384,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/reserve-bank-of-zimbabwe-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/reserve-bank-of-zimbabwe-exchange-rate)
 
 ## 📜 License
