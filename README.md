@@ -47,39 +47,39 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-21 by Reserve Bank of Zimbabwe — 29 rates. Updated 2026-10-21.</summary>
+<summary>Table as text: published 2026-10-22 by Reserve Bank of Zimbabwe — 29 rates. Updated 2026-10-22.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ZWG | buy | 18.1917 |
-| AUD | ZWG | middle | 18.6609 |
-| AUD | ZWG | sell | 19.13 |
-| BWP | ZWG | buy | 1.8152 |
-| BWP | ZWG | middle | 1.8754 |
-| BWP | ZWG | sell | 1.9356 |
-| CHF | ZWG | buy | 31.403 |
-| CHF | ZWG | middle | 32.2142 |
-| CHF | ZWG | sell | 33.0253 |
-| EUR | ZWG | buy | 29.1067 |
-| EUR | ZWG | middle | 29.8544 |
-| EUR | ZWG | sell | 30.602 |
-| GBP | ZWG | buy | 34.6848 |
-| GBP | ZWG | middle | 35.5769 |
-| GBP | ZWG | sell | 36.4689 |
-| NZD | ZWG | buy | 14.7141 |
-| NZD | ZWG | middle | 15.0941 |
-| NZD | ZWG | sell | 15.4741 |
-| USD | ZWG | buy | 25.9326 |
-| USD | ZWG | middle | 26.5975 |
-| USD | ZWG | sell | 27.2624 |
-| XAU | ZWG | buy | 106926.4477 |
-| XAU | ZWG | middle | 109679.0505 |
-| XAU | ZWG | sell | 112431.6533 |
-| XDR | ZWG | buy | 36.0303 |
-| XDR | ZWG | middle | 36.0303 |
-| XDR | ZWG | sell | 36.0303 |
-| ZMW | ZWG | buy | 0.7336 |
-| ZMW | ZWG | sell | 0.7731 |
+| AUD | ZWG | buy | 18.1734 |
+| AUD | ZWG | middle | 18.6449 |
+| AUD | ZWG | sell | 19.1163 |
+| BWP | ZWG | buy | 1.7987 |
+| BWP | ZWG | middle | 1.8639 |
+| BWP | ZWG | sell | 1.9291 |
+| CHF | ZWG | buy | 31.5106 |
+| CHF | ZWG | middle | 32.3267 |
+| CHF | ZWG | sell | 33.1428 |
+| EUR | ZWG | buy | 29.1339 |
+| EUR | ZWG | middle | 29.8837 |
+| EUR | ZWG | sell | 30.6335 |
+| GBP | ZWG | buy | 34.7139 |
+| GBP | ZWG | middle | 35.615 |
+| GBP | ZWG | sell | 36.516 |
+| NZD | ZWG | buy | 14.7419 |
+| NZD | ZWG | middle | 15.124 |
+| NZD | ZWG | sell | 15.5061 |
+| USD | ZWG | buy | 25.9175 |
+| USD | ZWG | middle | 26.5821 |
+| USD | ZWG | sell | 27.2467 |
+| XAU | ZWG | buy | 105769.0583 |
+| XAU | ZWG | middle | 108496.4062 |
+| XAU | ZWG | sell | 111223.7541 |
+| XDR | ZWG | buy | 36.0483 |
+| XDR | ZWG | middle | 36.0483 |
+| XDR | ZWG | sell | 36.0483 |
+| ZMW | ZWG | buy | 0.7348 |
+| ZMW | ZWG | sell | 0.7919 |
 
 </details>
 
