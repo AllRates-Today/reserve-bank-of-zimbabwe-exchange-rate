@@ -24,93 +24,78 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Reserve Bank of Zimbabwe table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/rbz?source=USD&target=ZWG"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/rbz').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Reserve Bank of Zimbabwe table](https://allratestoday.com/api/open/central-bank/rbz/table.svg)](https://allratestoday.com/central-bank-rates-api/rbz/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Reserve Bank of Zimbabwe — 102 rates, first 60 shown. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Reserve Bank of Zimbabwe — 102 rates, first 60 shown. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AFN | ZWG | buy | 2.3809 |
-| AFN | ZWG | middle | 2.4458 |
-| AFN | ZWG | sell | 2.5107 |
-| ARS | ZWG | buy | 56.5264 |
-| ARS | ZWG | middle | 57.9854 |
-| ARS | ZWG | sell | 59.4444 |
-| AUD | ZWG | buy | 18.2904 |
-| AUD | ZWG | middle | 18.7607 |
-| AUD | ZWG | sell | 19.231 |
-| BRL | ZWG | buy | 0.196 |
-| BRL | ZWG | middle | 0.2011 |
-| BRL | ZWG | sell | 0.2061 |
-| BWP | ZWG | buy | 1.7846 |
-| BWP | ZWG | middle | 1.8781 |
-| BWP | ZWG | sell | 1.9716 |
-| CHF | ZWG | buy | 31.2871 |
-| CHF | ZWG | middle | 32.0913 |
-| CHF | ZWG | sell | 32.8955 |
-| CNY | ZWG | buy | 0.2442 |
-| CNY | ZWG | middle | 0.2505 |
-| CNY | ZWG | sell | 0.2568 |
-| DKK | ZWG | buy | 0.246 |
-| DKK | ZWG | middle | 0.2523 |
-| DKK | ZWG | sell | 0.2586 |
-| EGP | ZWG | buy | 2.056 |
-| EGP | ZWG | middle | 2.1107 |
-| EGP | ZWG | sell | 2.1653 |
-| ETB | ZWG | buy | 5.9037 |
-| ETB | ZWG | middle | 6.0743 |
-| ETB | ZWG | sell | 6.2449 |
-| EUR | ZWG | buy | 28.8947 |
-| EUR | ZWG | middle | 29.6383 |
-| EUR | ZWG | sell | 30.3819 |
-| GBP | ZWG | buy | 34.5341 |
-| GBP | ZWG | middle | 35.4237 |
-| GBP | ZWG | sell | 36.3132 |
-| HKD | ZWG | buy | 0.2841 |
-| HKD | ZWG | middle | 0.2933 |
-| HKD | ZWG | sell | 0.3024 |
-| INR | ZWG | buy | 3.4941 |
-| INR | ZWG | middle | 3.5839 |
-| INR | ZWG | sell | 3.6737 |
-| JPY | ZWG | buy | 5.7875 |
-| JPY | ZWG | middle | 5.9367 |
-| JPY | ZWG | sell | 6.0859 |
-| KES | ZWG | buy | 4.7634 |
-| KES | ZWG | middle | 4.8894 |
-| KES | ZWG | sell | 5.0153 |
-| LSL | ZWG | buy | 0.6094 |
-| LSL | ZWG | middle | 0.6251 |
-| LSL | ZWG | sell | 0.6408 |
-| MUR | ZWG | buy | 1.7348 |
-| MUR | ZWG | middle | 1.7851 |
-| MUR | ZWG | sell | 1.8353 |
-| MWK | ZWG | buy | 62.9627 |
-| MWK | ZWG | middle | 65.2189 |
-| MWK | ZWG | sell | 67.4751 |
-| MYR | ZWG | buy | 0.1489 |
-| MYR | ZWG | middle | 0.1528 |
-| MYR | ZWG | sell | 0.1567 |
+| AFN | ZWG | buy | 2.384 |
+| AFN | ZWG | middle | 2.449 |
+| AFN | ZWG | sell | 2.5139 |
+| ARS | ZWG | buy | 56.47 |
+| ARS | ZWG | middle | 57.9373 |
+| ARS | ZWG | sell | 59.4045 |
+| AUD | ZWG | buy | 18.2256 |
+| AUD | ZWG | middle | 18.6943 |
+| AUD | ZWG | sell | 19.163 |
+| BRL | ZWG | buy | 0.1977 |
+| BRL | ZWG | middle | 0.2028 |
+| BRL | ZWG | sell | 0.2078 |
+| BWP | ZWG | buy | 1.7824 |
+| BWP | ZWG | middle | 1.8622 |
+| BWP | ZWG | sell | 1.9419 |
+| CHF | ZWG | buy | 31.4941 |
+| CHF | ZWG | middle | 32.3037 |
+| CHF | ZWG | sell | 33.1132 |
+| CNY | ZWG | buy | 0.2444 |
+| CNY | ZWG | middle | 0.2507 |
+| CNY | ZWG | sell | 0.257 |
+| DKK | ZWG | buy | 0.2453 |
+| DKK | ZWG | middle | 0.2516 |
+| DKK | ZWG | sell | 0.2579 |
+| EGP | ZWG | buy | 2.0542 |
+| EGP | ZWG | middle | 2.1088 |
+| EGP | ZWG | sell | 2.1634 |
+| ETB | ZWG | buy | 5.911 |
+| ETB | ZWG | middle | 6.0819 |
+| ETB | ZWG | sell | 6.2528 |
+| EUR | ZWG | buy | 28.9719 |
+| EUR | ZWG | middle | 29.7161 |
+| EUR | ZWG | sell | 30.4603 |
+| GBP | ZWG | buy | 34.6637 |
+| GBP | ZWG | middle | 35.5621 |
+| GBP | ZWG | sell | 36.4604 |
+| HKD | ZWG | buy | 0.2845 |
+| HKD | ZWG | middle | 0.2937 |
+| HKD | ZWG | sell | 0.3028 |
+| INR | ZWG | buy | 3.4977 |
+| INR | ZWG | middle | 3.5876 |
+| INR | ZWG | sell | 3.6774 |
+| JPY | ZWG | buy | 5.7857 |
+| JPY | ZWG | middle | 5.9343 |
+| JPY | ZWG | sell | 6.0828 |
+| KES | ZWG | buy | 4.7694 |
+| KES | ZWG | middle | 4.8956 |
+| KES | ZWG | sell | 5.0217 |
+| LSL | ZWG | buy | 0.61 |
+| LSL | ZWG | middle | 0.6257 |
+| LSL | ZWG | sell | 0.6414 |
+| MUR | ZWG | buy | 1.7304 |
+| MUR | ZWG | middle | 1.7806 |
+| MUR | ZWG | sell | 1.8307 |
+| MWK | ZWG | buy | 63.043 |
+| MWK | ZWG | middle | 65.3022 |
+| MWK | ZWG | sell | 67.5613 |
+| MYR | ZWG | buy | 0.1486 |
+| MYR | ZWG | middle | 0.1526 |
+| MYR | ZWG | sell | 0.1565 |
 
 </details>
 
